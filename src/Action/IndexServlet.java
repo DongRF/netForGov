@@ -1,6 +1,7 @@
 package Action;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -9,8 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import Pojo.IndexData;
-import Pojo.IndexRealTimeNews;
+import com.google.gson.Gson;
+
+import Pojo.FixedData;
 import Service.IndexService;
 
 /**
@@ -32,9 +34,18 @@ public class IndexServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		//获取index页面的数据
+
+		String searchWord = new String(request.getParameter("searchWord").getBytes("iso-8859-1"), "utf-8");
 		IndexService indexService = new IndexService();
+		List<FixedData> list = indexService.getSearchNews(searchWord);
+		Gson gson = new Gson();
+		String str = gson.toJson(list);
+		
+		//System.out.println(str);
+		
+		response.setContentType("application/text; charset=utf-8");
+		PrintWriter out = response.getWriter();
+		out.write(str);
 	}
 
 	/**
@@ -43,9 +54,16 @@ public class IndexServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String id = request.getParameter("id");
-		System.out.println("id = " +id);
 		IndexService indexService = new IndexService();
-		indexService.getTodayNews(id);
+		List<FixedData> list = indexService.getTodayNews(id);
+		Gson gson = new Gson();
+		String str = gson.toJson(list);
+		
+		//System.out.println(str);
+		
+		response.setContentType("application/text; charset=utf-8");
+		PrintWriter out = response.getWriter();
+		out.write(str);
 	}
 
 }

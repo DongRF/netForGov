@@ -1,0 +1,136 @@
+#thirdDiv{
+	width: 100%;
+	height: 30%;
+	padding-top:5px;
+	background-color: #eee;
+}
+
+#fifthDiv{
+	width: 100%;
+	height: 30%;
+	background-color: #eee;
+}
+
+#sixthDiv{
+	width: 100%;
+	height: 10%;
+	background-color: #eee;
+}
+
+#mainThirdDiv{
+	width:60%;
+	height:100%;
+	margin-left: 20%;
+	background-color: #fff;
+}
+
+#mainFifthDiv{
+	width:60%;
+	height:88%;
+	padding-top: 20px;
+	margin-left: 20%;
+	background-color: #fff;
+}
+
+#mainSixthDiv{
+	width:60%;
+	height:100%;
+	margin-left: 20%;
+	background-color: #fff;
+}
+
+#leftMainFifthDiv{
+	width:70%;
+	height:100%;
+	float: left;
+}
+
+#rightMainFifthDiv{
+	width:25%;
+	height:100%;
+	margin-left: 4%;
+	float: left;
+}
+
+.imgtd{
+	width:20%;
+}
+
+.zwgk_photo{
+	width:100px;
+	height:150px;
+	border-radius: 50%;
+}
+
+.Bword{
+	font-size: 15px;
+	color: #0766ab;
+	font-weight: bold;
+}
+
+.Sword{
+	font-size: 11.5px;
+	color: #000;
+}
+
+#forthDiv{
+	width: 100%;
+	height: 33%;
+	background-color: #eee;
+}
+
+#mainFourthDiv{
+	width:60%;
+	height:100%;
+	margin-left: 20%;
+	background-color: #fff;
+	border-top: solid 2px;
+	padding-top: 5px;
+}
+
+.word1{
+	font-weight: bold;
+	color:red;
+	font-size: 15px;
+}
+
+.td1{
+	border-bottom: solid 1px #ccc;
+}
+
+.span2{
+	font-size: 13.5px;
+	color: #fff;
+}
+
+.noline{
+	text-decoration:none;
+}
+
+.img1{
+	width: 35px;
+	height: 35px;
+}
+
+.opac1{
+	opacity: 1;
+}
+
+.opac0{
+	opacity: 0.7;
+}
+
+.td2{
+	background-color: #dfe6f0;
+	width: 33.3333%;
+}
+
+.span3{
+	font-size:9px;
+	color: #0056a9;
+}
+
+.img2{
+	width: 45px;
+	height: 45px;
+}

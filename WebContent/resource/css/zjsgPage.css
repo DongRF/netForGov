@@ -1,0 +1,81 @@
+#thirdDiv{
+	width: 100%;
+	height: 40%;
+	background-color: #eee;
+}
+
+#forthDiv{
+	width: 100%;
+	height: 30%;
+	background-color: #eee;
+}
+
+#mianForthDiv{
+	width: 60%;
+	height: 100%;
+	background-color: #fff;
+	margin-left: 20%;
+	padding-top: 10px;
+}
+
+#topForthDiv{
+	width: 100%;
+	height: 10%;
+	float: left;
+	border-bottom: solid 1px #aaa;
+}
+
+#bottomForthDiv{
+	width: 100%;
+	height: 85%;
+	float: left;
+}
+
+#topThirdDiv{
+	width: 100%;
+	height: 10%;
+	float: left;
+	border-bottom: solid 1px #aaa;
+}
+
+#leftThirdDiv{
+	width: 50%;
+	height: 90%;
+	float: left;
+}
+
+#rightThirdDiv{
+	width: 50%;
+	height: 90%;
+	float: left;
+}
+
+.span0{
+	font-size: 12px;
+}
+
+.span1{
+	font-size: 12px;
+}
+
+.span2{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.span3{
+	font-size: 10px;
+}
+
+#sixthDiv{
+	width: 100%;
+	height: 10%;
+	background-color: #eee;
+}
+
+#mainSixthDiv{
+	width:60%;
+	height:100%;
+	margin-left: 20%;
+	background-color: #fff;
+}

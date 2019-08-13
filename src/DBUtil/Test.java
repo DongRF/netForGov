@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Pojo.IndexData;
-import Pojo.IndexHeadline;
-import Pojo.IndexRealTimeNews;
 
 public class Test {
   /**

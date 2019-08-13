@@ -46,7 +46,6 @@ public class DBUtils {
  }
  
  private void registeredDriver() {
-     // TODO Auto-generated method stub
      try {
          Class.forName(DRIVER);
          System.out.println("注册驱动成功！");
@@ -65,7 +64,6 @@ public class DBUtils {
      try {
          con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
      } catch (SQLException e) {
-         // TODO Auto-generated catch block
          e.printStackTrace();
      }
      System.out.println("连接数据库成功!!");
@@ -184,7 +182,6 @@ public <T> List<T> executeQueryByRef(String sql, List<Object> params,
              try {
                  resultSet.close();
              } catch (SQLException e) {
-                 // TODO Auto-generated catch block
                  e.printStackTrace();
              }
          }
@@ -192,7 +189,6 @@ public <T> List<T> executeQueryByRef(String sql, List<Object> params,
              try {
                  pstmt.close();
              } catch (SQLException e) {
-                 // TODO Auto-generated catch block
                  e.printStackTrace();
              }
          }
@@ -200,7 +196,6 @@ public <T> List<T> executeQueryByRef(String sql, List<Object> params,
              try {
                  con.close();
              } catch (SQLException e) {
-                 // TODO Auto-generated catch block
                  e.printStackTrace();
              }
          }
